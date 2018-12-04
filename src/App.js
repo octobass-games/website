@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { open: false };
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <header className="my-element">
+          <div className="logo"/>
+
         </header>
-      </div>
-    );
+        <div className="links flex-container">
+        <a href="https://twitter.com/OctobassGames"><i className="fab fa-twitter link flex-item"></i></a>
+          <a href="https://octobass.itch.io/"><i className="fas fa-gamepad link flex-item"></i></a>
+          <a href="https://octobassgames.tumblr.com"><i className="fab fa-tumblr link flex-item"></i></a>
+          
+        </div>
+      </div>)
   }
 }
 
