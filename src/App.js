@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './Home.js';
+import MoodySoup from './MoodySoup.js';
+import HatsAndCats from './HatsAndCats.js';
+import Team from './Team.js';
 
 class App extends Component {
   constructor(props) {
@@ -9,18 +14,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="my-element">
-          <div className="logo"/>
-
-        </header>
-        <div className="links flex-container">
-        <a href="https://twitter.com/OctobassGames"><i className="fab fa-twitter link flex-item"></i></a>
-          <a href="https://octobass.itch.io/"><i className="fas fa-gamepad link flex-item"></i></a>
-          <a href="https://octobassgames.tumblr.com"><i className="fab fa-tumblr link flex-item"></i></a>
-          
-        </div>
-      </div>)
+       <Router>
+          <Switch>
+            <Route exact path="/moody-soup" component={MoodySoup} />
+            <Route exact path="/hats-and-cats" component={HatsAndCats} />
+            <Route exact path="/team" component={Team} />
+            <Route component={Home} />
+          </Switch>
+        </Router>)
   }
 }
 

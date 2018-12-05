@@ -1,11 +1,103 @@
 .App {
-  text-align: center;
+  font-family: VT323,monospace;
+}
+
+.MoodySoup {
+  background-image: url(https://i.imgur.com/WQJYxQi.png);
+  color: white;
+  background-repeat: no-repeat, repeat;
+  background-color: #f59988;
+}
+
+.Team {
+  color: #ea6a8b;
+  background-color: #c6e5d9;
+}
+
+.megan {
+  background-color: pink;
+}
+
+.team-panel {
+}
+
+.witch {
+  width: 306px;
+}
+
+.HatsAndCats{
+  background-image: url(https://i.imgur.com/v8wfB7z.png);
+  color: white;
+  background-repeat: repeat, repeat;
+  background-color: #630079;
+  	animation: animatedBackground 40s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .moody-soup-logo {
+    height: 240px;
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .moody-soup-image {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .moody-soup-description {
+    width: inherit;
+  }
+}
+
+.moody-soup-description {
+    width: 400px;
+}
+
+.gallery {
+  background-color: #ececec59;
+  padding-bottom: 100px;
+  border-top: 10px solid white;
+}
+
+.gallery-header {
+    width: 100%;
+    text-align: center;
+}
+
+.description {
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.bass-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  padding-top: 20px;
+  z-index: 999;
+}
+
+body {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .App-logo {
@@ -29,9 +121,9 @@
 	}
 }
 
-/* The element to apply the animation to */
-.my-element {
+.main-header {
     animation: float 6s ease-in-out infinite;
+    padding-top: 100px
 }
 
 .logo {
@@ -42,25 +134,94 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .logo {
-        background-color: lightblue;
         background: url(simple-octobass.svg);
+        width: 150px;
+        height: 240px;
+        background-size: 100%;
     }
 }
 
+.game-image {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.fade-in:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: fadein 2s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.game-images {
+      padding-bottom: 30px;
+}
+
+.fade-in:nth-child(1) { animation-delay: .5s }
+.fade-in:nth-child(2) { animation-delay: 1s }
+.fade-in:nth-child(3) { animation-delay: 1.5s }
+
 .links {
     border-top: #0000002e solid 2px;
-
 }
+
+.spin {
+  animation: spin linear 3s infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .link {
   padding: 20px;
   color: #f4ead5;
 }
 
+.link-inverse {
+  padding: 20px;
+  color: #ea6a8b;
+}
+
+.link-inverse:hover {
+  color: #f4ead5;
+}
+
+
 .link:hover {
   color: #ea6a8b;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+/*
 .flex-container {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -92,4 +253,37 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-  }
+  } */
+
+  .flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+.flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
