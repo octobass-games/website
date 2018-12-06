@@ -2,6 +2,10 @@
   font-family: VT323,monospace;
 }
 
+p {
+  font-size: 25px;
+}
+
 .MoodySoup {
   background-image: url(https://i.imgur.com/WQJYxQi.png);
   color: white;
@@ -77,6 +81,7 @@
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
+  animation: fadein 2s ease-in;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
