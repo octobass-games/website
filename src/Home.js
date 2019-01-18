@@ -19,9 +19,9 @@ const Home = () => (
             </Link>
         </div>
         <div className="links flex-container">
-        <a href="https://twitter.com/OctobassGames" title="our twitter"><i className="fab fa-twitter link flex-item"></i></a>
-          <a href="https://octobass.itch.io/" title="our itch.io"><i className="fas fa-gamepad link flex-item"></i></a>
-          <a href="https://octobassgames.tumblr.com" title="our tumble"><i className="fab fa-tumblr link flex-item"></i></a>
+        <a href="https://twitter.com/OctobassGames" title="twitter"><i className="fab fa-twitter link flex-item"></i></a>
+          <a href="https://octobass.itch.io/" title="itch.io"><i className="fas fa-gamepad link flex-item"></i></a>
+          <a href="https://octobassgames.tumblr.com" title="tumblr"><i className="fab fa-tumblr link flex-item"></i></a>
         </div>
       </div>);
 
