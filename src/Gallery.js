@@ -6,22 +6,30 @@ class Gallery extends Component {
     this.state = { index: 0 };
   }
 
+  slideyClassname =  "slideRight"
+
   render() {
     const images = this.props.images || []
     const index = this.state.index;
 
     const image = images[index]
-    const next = () => this.setState({ index: (index + 1) % images.length })
+    const update = (key) => this.setState({ index: key, imageLoaded:false })
+
+    this.slideyClassname = (this.state.imageLoaded) ?  "slideRight" : "image-loading"
     return (
-      <div className="flex-container description gallery">
-        <h3 className="gallery-header">Screenshots</h3>
+      <div className="description gallery">
+      <div className="flex-container">
         <div className="flex-item">
-          <img className="moody-soup-image" src={image} alt="screenshot"/>
+          <img className={"moody-soup-image "+this.slideyClassname} src={image} alt="screenshot" onLoad={()=> this.setState({imageLoaded: true})}/>
         </div>
-        {images.length > 1 && <div className="flex-item">
-          <i className="fas fa-arrow-right" onClick={next}></i>
-        </div>}
-      </div>)
+      </div>
+      <div className="flex-container ">
+        <div className="flex-item">
+            {images.map((img, key) => <i className={"fas fa-heart gallery-icon "+ (key===index && "gallery-icon__selected")} onClick={() => update(key)}></i> )}
+        </div>
+        </div>
+
+    </div>)
   }
 }
 

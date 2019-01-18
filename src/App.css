@@ -56,6 +56,10 @@ p {
   }
 }
 
+.moody-soup-image {
+  border-radius: 15%;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .moody-soup-description {
     width: inherit;
@@ -292,3 +296,73 @@ body {
     -ms-flex-item-align: auto;
     align-self: auto;
     }
+
+
+
+    .slideRight {
+    	animation-name: slideRight;
+    	-webkit-animation-name: slideRight;
+
+    	animation-duration: 1s;
+    	-webkit-animation-duration: 1s;
+
+    	animation-timing-function: ease-in-out;
+    	-webkit-animation-timing-function: ease-in-out;
+
+    	visibility: visible !important;
+    }
+
+    @keyframes slideRight {
+      0% {
+        opacity: 0;
+      }
+
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+        .slideRight2 {
+        	animation-name: slideRight2;
+        	-webkit-animation-name: slideRight2;
+
+        	animation-duration: 1s;
+        	-webkit-animation-duration: 1s;
+
+        	animation-timing-function: ease-in-out;
+        	-webkit-animation-timing-function: ease-in-out;
+
+        	visibility: visible !important;
+        }
+
+        @keyframes slideRight2 {
+          0% {
+            opacity: 0;
+        	}
+
+
+          50% {
+            opacity: 0;
+          }
+
+        	100% {
+            opacity: 1;
+        	}
+        }
+
+.image-loading {
+  opacity: 0;
+}
+.gallery-icon {
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.gallery-icon__selected {
+  color: #ea6a8b;
+}
