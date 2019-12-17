@@ -44,6 +44,7 @@ class Gallery extends Component<GalleryProps, GalleryState> {
           <div className="flex-item">
             {images.map((img, key) => (
               <i
+                key={key}
                 className={
                   "fas fa-heart gallery-icon " +
                   (key === index && "gallery-icon__selected")

@@ -9,7 +9,9 @@ const images = [
   "https://i.imgur.com/6jIewZa.gif",
   "https://i.imgur.com/kouVAc7.gif",
   "https://i.imgur.com/TPJjNdu.gif",
-  "https://i.imgur.com/TeH9aVm.gif"
+  "https://i.imgur.com/TeH9aVm.gif",
+  "https://i.imgur.com/E9Yug1r.gif",
+  "https://i.imgur.com/AayNdwP.gif"
 ];
 
 const MoodySoup = () => (

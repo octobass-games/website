@@ -14,11 +14,11 @@ const Home = () => (
           alt="moody-soup"
         />
       </Link>
-      <Link to="/hats-and-cats" className="fade-in">
+      <Link to="/mini-games" className="fade-in">
         <img
           className="game-image flex-item"
-          src="https://i.imgur.com/JMrVs09.png"
-          alt="hats-and-cats"
+          src="https://i.imgur.com/V91m7jg.png"
+          alt="mini games"
         ></img>
       </Link>
       <Link to="/team" className="fade-in">
@@ -38,6 +38,9 @@ const Home = () => (
       </a>
       <a href="https://octobassgames.tumblr.com" title="tumblr">
         <i className="fab fa-tumblr link flex-item"></i>
+      </a>
+      <a href="https://github.com/octobass-games" title="github">
+        <i className="fab fa-github link flex-item"></i>
       </a>
     </div>
   </div>
