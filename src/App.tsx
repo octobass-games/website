@@ -8,7 +8,7 @@ import MiniGames from "./MiniGames";
 import HatsAndCats from "./HatsAndCats";
 
 const App: FunctionComponent = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/moody-soup" component={MoodySoup} />
       <Route exact path="/mini-games" component={MiniGames} />
