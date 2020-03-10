@@ -13,6 +13,14 @@ const App: FunctionComponent = () => (
       <Route exact path="/moody-soup" component={MoodySoup} />
       <Route exact path="/mini-games" component={MiniGames} />
       <Route exact path="/hats-and-cats" component={HatsAndCats} />
+      <Route
+        exact
+        component={() => {
+          (window as any).location = "https://octobass-games.github.io/vimboy";
+          return null;
+        }}
+        path="/vimboy"
+      />
       <Route exact path="/team" component={Team} />
       <Route component={Home} />
     </Switch>

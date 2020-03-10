@@ -23,7 +23,7 @@ const MiniGames = () => (
       </div>
     </Link>
     <hr />
-    <a href="/vimboy">
+    <a href="https://octobass-games.github.io/vimboy">
       <div className="Vimboy mini-game-panel">
         <div className="main-header flex-container">
           <h2 className="vimboy-title">vimboy</h2>
