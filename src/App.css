@@ -442,4 +442,9 @@ body {
     height: auto;
     padding: 0;
   }
+
+  .team-member-wrapper {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
