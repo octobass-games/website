@@ -38,6 +38,21 @@ p {
   width: 306px;
 }
 
+.game-panel {
+  height: 30vh;
+  opacity: 0.7;
+}
+
+.game-panel__label {
+  height: 100%;
+}
+
+.game-panel:hover,
+.game-panel:focus,
+.game-panel:focus-within {
+  opacity: 1;
+}
+
 .HatsAndCats {
   background-image: url(https://i.imgur.com/v8wfB7z.png);
   color: white;
@@ -46,8 +61,12 @@ p {
   animation: animatedBackground 40s linear infinite;
 }
 
-.HatsAndCats:hover {
-  background-color: #9b47ae;
+.LunarHeist {
+  background-image: url(https://i.imgur.com/rynABBR.png);
+  color: white;
+  background-repeat: repeat, repeat;
+  background-color: #630079;
+  background-position: center;
 }
 
 .Vimboy {
@@ -56,17 +75,11 @@ p {
   color: white;
 }
 
-.Vimboy:hover {
-  background: linear-gradient(
-      rgba(168, 168, 168, 0.45),
-      rgba(168, 168, 168, 0.45)
-    ),
-    url(https://i.imgur.com/XRpbGuq.png);
-  background-size: cover;
-}
-
-.mini-game-panel {
-  padding-bottom: 40px;
+.mini-games {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .mini-games hr {

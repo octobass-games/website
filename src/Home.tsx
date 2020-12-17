@@ -7,14 +7,7 @@ const Home = () => (
       <div className="logo flex-item" />
     </div>
     <div className="flex-container game-images">
-      <Link to="/moody-soup" className="fade-in">
-        <img
-          className="game-image flex-item"
-          src="https://i.imgur.com/IkdDQBO.png"
-          alt="moody-soup"
-        />
-      </Link>
-      <Link to="/mini-games" className="fade-in">
+      <Link to="/games" className="fade-in">
         <img
           className="game-image flex-item"
           src="https://i.imgur.com/V91m7jg.png"
