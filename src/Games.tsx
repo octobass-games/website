@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./simple-octobass.svg";
+import NavBar from "./NavBar";
 
 const Games = () => (
-  <div className="App mini-games">
-    <Link to="/">
-      <img className="bass-logo" src={logo} alt="home" />
-    </Link>
+  <div className="App mini-games Page">
+    <NavBar />
     <hr />
     <a href="https://octobass.itch.io/lunar-heist" aria-label="Lunar Heist">
       <div className="LunarHeist game-panel" />

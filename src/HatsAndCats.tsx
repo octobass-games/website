@@ -1,15 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "./simple-octobass.svg";
 import Gallery from "./Gallery";
+import NavBar from "./NavBar";
 
 const images = ["https://i.imgur.com/A43Lrgs.gif"];
 
 const HatsAndCats = () => (
-  <div className="HatsAndCats App">
-    <Link to="/">
-      <img className="bass-logo" src={logo} alt="home" />
-    </Link>
+  <div className="HatsAndCats App Page">
+    <NavBar />
     <div className="main-header flex-container">
       <img
         className="flex-item moody-soup-logo"

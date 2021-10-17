@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "./simple-octobass.svg";
+import NavBar from "./NavBar";
 import TeamMember from "./TeamMember";
 
 const meganDescription =
@@ -69,57 +68,58 @@ const Team = () => {
     }
   };
   return (
-    <div className="Team App">
-      <div className="team-info-wrapper">
-        {pickedPerson && (
-          <div className="team-info">
-            <p>{bubbles[pickedPerson].description}</p>
-            {bubbles[pickedPerson].links.map(({ href, icon }) => (
-              <a href={href} key={href}>
-                <i className={`${icon} link-inverse flex-item team-link`}></i>
-              </a>
-            ))}
-          </div>
-        )}
-        {!pickedPerson && (
-          <div className="team-info">
-            <h1>Meet the team! Click a person to find out more.</h1>
-          </div>
-        )}
+    <>
+      <NavBar />
+      <div className="Team App Page">
+        <div className="team-info-wrapper">
+          {pickedPerson && (
+            <div className="team-info">
+              <p>{bubbles[pickedPerson].description}</p>
+              {bubbles[pickedPerson].links.map(({ href, icon }) => (
+                <a href={href} key={href}>
+                  <i className={`${icon} link-inverse flex-item team-link`}></i>
+                </a>
+              ))}
+            </div>
+          )}
+          {!pickedPerson && (
+            <div className="team-info">
+              <h1>Meet the team! Click a person to find out more.</h1>
+            </div>
+          )}
+        </div>
+
+        <div className="team-wrapper">
+          <TeamMember
+            image="https://i.imgur.com/ocGcJTJ.gif"
+            person="adam"
+            onClick={toggle}
+            isSelected={pickedPerson === "adam"}
+          />
+
+          <TeamMember
+            image="https://i.imgur.com/PGvf9v1.gif"
+            person="megan"
+            onClick={toggle}
+            isSelected={pickedPerson === "megan"}
+          />
+
+          <TeamMember
+            image="https://i.imgur.com/hmOoxWl.gif"
+            person="hal"
+            onClick={toggle}
+            isSelected={pickedPerson === "hal"}
+          />
+
+          <TeamMember
+            image="https://i.imgur.com/Tik2gsp.gif"
+            person="odette"
+            onClick={toggle}
+            isSelected={pickedPerson === "odette"}
+          />
+        </div>
       </div>
-      <Link to="/">
-        <img className="bass-logo" src={logo} alt="home" />
-      </Link>
-      <div className="team-wrapper">
-        <TeamMember
-          image="https://i.imgur.com/ocGcJTJ.gif"
-          person="adam"
-          onClick={toggle}
-          isSelected={pickedPerson === "adam"}
-        />
-
-        <TeamMember
-          image="https://i.imgur.com/PGvf9v1.gif"
-          person="megan"
-          onClick={toggle}
-          isSelected={pickedPerson === "megan"}
-        />
-
-        <TeamMember
-          image="https://i.imgur.com/hmOoxWl.gif"
-          person="hal"
-          onClick={toggle}
-          isSelected={pickedPerson === "hal"}
-        />
-
-        <TeamMember
-          image="https://i.imgur.com/Tik2gsp.gif"
-          person="odette"
-          onClick={toggle}
-          isSelected={pickedPerson === "odette"}
-        />
-      </div>
-    </div>
+    </>
   );
 };
 
