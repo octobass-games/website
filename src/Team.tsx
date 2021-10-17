@@ -12,7 +12,8 @@ tend to predominantly play RPGs, with my favourite series being
 Persona. My other main interests include watching anime, listening to
 music, and playing drums and piano (although not at the same time). I
 like penguins and cats.`;
-const odetteDescription = "Odette!";
+const odetteDescription =
+  "Odette: I currently work in Project Finance residing in the UK. In my spare time I enjoy playing games and drawing!";
 
 export type PickedPerson = "odette" | "hal" | "megan" | "adam";
 
