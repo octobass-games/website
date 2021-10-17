@@ -1,27 +1,28 @@
 import React, { FunctionComponent } from "react";
+import { PickedPerson } from "./Team";
 
 interface TeamMemberProps {
-  description: string;
-  links: JSX.Element;
-  className: string;
   image: string;
+  onClick: (person: PickedPerson) => void;
+  person: PickedPerson;
+  isSelected: boolean;
 }
 
 const TeamMember: FunctionComponent<TeamMemberProps> = ({
-  description,
-  links,
-  className,
   image,
+  onClick,
+  person,
+  isSelected,
 }) => (
-  <div className={`team-panel ${className}`}>
-    <div className="team-member-wrapper">
-      <img className="team-member-image" src={image} alt="moody" />
-      <div className="flex-item team-member-description">
-        <p>{description}</p>
-      </div>
-    </div>
-    <div className="links flex-container pink">{links}</div>
-  </div>
+  <button
+    className={`team-member-button ${
+      isSelected ? "team-member-button--active" : ""
+    }`}
+    title={`About ${person}`}
+    onClick={() => onClick(person)}
+  >
+    <img className="team-member-image" src={image} alt="" />
+  </button>
 );
 
 export default TeamMember;

@@ -29,6 +29,12 @@ const Home = () => (
       <a href="https://octobass.itch.io/" title="itch.io">
         <i className="fas fa-gamepad link flex-item"></i>
       </a>
+      <a
+        href="https://www.youtube.com/channel/UCnn7NagMQ0LmW89RH-Dya3Q"
+        title="youtube"
+      >
+        <i className="fab fa-youtube link flex-item"></i>
+      </a>
       <a href="https://octobassgames.tumblr.com" title="tumblr">
         <i className="fab fa-tumblr link flex-item"></i>
       </a>
