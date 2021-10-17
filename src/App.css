@@ -453,6 +453,7 @@ body {
   background-color: transparent;
   border: none;
   height: 100%;
+  cursor: pointer;
 }
 
 .team-member-image {

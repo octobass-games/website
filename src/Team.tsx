@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 import TeamMember from "./TeamMember";
 
 const meganDescription =
-  "Megan: I'm also a UK based dev. I like point and click games, and collect toy flamingos. I sometimes attempt to do art things too.";
+  "Megan: I'm a UK based dev, and also enjoy making pixel and digital art! I like point and click games, and collect toy flamingos.";
 
 const haldenDescription =
   "Halden: I'm a student who has previously studied music and is now studying computer science. I enjoy music composition, performance and sound design. Some of my favourite instruments are tuba, trombone and guitar.";
@@ -12,7 +12,7 @@ tend to predominantly play RPGs, with my favourite series being
 Persona. My other main interests include watching anime, listening to
 music, and playing drums and piano (although not at the same time). I
 like penguins and cats.`;
-const odetteDescription = "Odette: testing";
+const odetteDescription = "Odette!";
 
 export type PickedPerson = "odette" | "hal" | "megan" | "adam";
 
