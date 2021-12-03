@@ -6,6 +6,10 @@ const Games = () => (
   <div className="App mini-games Page">
     <NavBar />
     <hr />
+    <a href="https://octobass.itch.io/dont-bug-me" aria-label="Don't bug me">
+      <div className="DontBugMe game-panel" />
+    </a>
+    <hr />
     <a href="https://octobass.itch.io/lunar-heist" aria-label="Lunar Heist">
       <div className="LunarHeist game-panel" />
     </a>
