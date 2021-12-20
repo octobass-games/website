@@ -8,7 +8,7 @@ const HaldenGames = () => (
       height="165"
       frameBorder="0"
       title="Don't Bug Me!"
-      className="fade-in fade-in--no-delay"
+      className="fade-in fade-in--no-delay itch"
     >
       <a href="https://octobass.itch.io/dont-bug-me">
         Don't Bug Me! by octobass, majicmoo, Odettica, Madmouseman,
@@ -21,7 +21,7 @@ const HaldenGames = () => (
       height="165"
       frameBorder="0"
       title="Lunar Heist"
-      className="fade-in fade-in--no-delay"
+      className="fade-in fade-in--no-delay itch"
     >
       <a href="https://octobass.itch.io/lunar-heist">
         Lunar Heist by octobass, majicmoo, adamskipadamski, Madmouseman
