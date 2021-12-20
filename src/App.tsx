@@ -6,12 +6,14 @@ import MoodySoup from "./MoodySoup";
 import Team from "./Team";
 import Games from "./Games";
 import HatsAndCats from "./HatsAndCats";
+import Halden from "./Halden/Halden";
 
 const App: FunctionComponent = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/moody-soup" component={MoodySoup} />
       <Route exact path="/games" component={Games} />
+      <Route exact path="/halden" component={Halden} />
       <Route exact path="/hats-and-cats" component={HatsAndCats} />
       <Route
         exact

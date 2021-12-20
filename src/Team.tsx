@@ -44,6 +44,7 @@ const bubbles: Record<PickedPerson, Bubble> = {
   hal: {
     description: haldenDescription,
     links: [
+      { href: "https://octobass.games/halden", icon: "fas fa-music" },
       { href: "https://github.com/Madmouseman", icon: "fab fa-github" },
       {
         href: "https://haldenparkeswork.wordpress.com/",
