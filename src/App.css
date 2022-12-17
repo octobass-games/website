@@ -94,6 +94,15 @@ p {
   background-size: cover;
 }
 
+.CatGotYourTongue {
+  background-image: url(https://i.imgur.com/PCVRMBY.gif);
+  background-repeat: repeat-x;
+  background-size:  100%;
+  background-color: #19181b;
+  background-position-x: center;
+  background-position-y: center;
+}
+
 .Vimboy {
   background: url(https://i.imgur.com/XRpbGuq.png);
   background-size: cover;

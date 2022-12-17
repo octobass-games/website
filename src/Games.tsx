@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 
 const Games = () => (
@@ -8,6 +7,10 @@ const Games = () => (
     <hr />
     <a href="https://octobass.itch.io/dont-bug-me" aria-label="Don't bug me">
       <div className="DontBugMe game-panel" />
+    </a>
+    <hr />
+    <a href="https://octobass.itch.io/cat-got-your-tongue" aria-label="Cat got your tongue?">
+      <div className="CatGotYourTongue game-panel" />
     </a>
     <hr />
     <a href="https://octobass.itch.io/lunar-heist" aria-label="Lunar Heist">
@@ -21,18 +24,6 @@ const Games = () => (
         </div>
       </div>
     </a>
-    <hr />
-    <Link to="/hats-and-cats" aria-label="Hats and Cats">
-      <div className="HatsAndCats game-panel">
-        <div className="flex-container game-panel__label">
-          <img
-            className="flex-item moody-soup-logo"
-            src="https://i.imgur.com/XkjWCD5.png"
-            alt="moody"
-          />
-        </div>
-      </div>
-    </Link>
     <hr />
   </div>
 );
