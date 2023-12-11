@@ -17,12 +17,8 @@ const Games = () => (
       <div className="LunarHeist game-panel" />
     </a>
     <hr />
-    <a href="https://octobass-games.github.io/vimboy" aria-label="Vimboy">
-      <div className="Vimboy game-panel">
-        <div className="flex-container game-panel__label">
-          <h2 className="vimboy-title">vimboy</h2>
-        </div>
-      </div>
+    <a href="https://octobass.itch.io/stumble-and-stew" aria-label="Stumble And Stew">
+      <div className="StumbleAndStew game-panel" />
     </a>
     <hr />
   </div>
