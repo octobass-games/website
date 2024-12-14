@@ -13,14 +13,17 @@ const Games = () => (
       <div className="CatGotYourTongue game-panel" />
     </a>
     <hr />
-    <a href="https://octobass.itch.io/lunar-heist" aria-label="Lunar Heist">
-      <div className="LunarHeist game-panel" />
-    </a>
-    <hr />
     <a href="https://octobass.itch.io/stumble-and-stew" aria-label="Stumble And Stew">
       <div className="StumbleAndStew game-panel" />
     </a>
     <hr />
+    <a href="https://octobass.itch.io/solander" aria-label="Solander">
+      <div className="Solander game-panel" />
+    </a>
+    <hr />
+    <a href="https://octobass.itch.io/lunar-heist" aria-label="Lunar Heist">
+      <div className="LunarHeist game-panel" />
+    </a>
   </div>
 );
 
