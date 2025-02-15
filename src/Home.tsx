@@ -23,9 +23,6 @@ const Home = () => (
       </Link>
     </div>
     <div className="links flex-container">
-      <a href="https://twitter.com/OctobassGames" title="twitter">
-        <i className="fab fa-twitter link flex-item"></i>
-      </a>
       <a href="https://octobass.itch.io/" title="itch.io">
         <i className="fas fa-gamepad link flex-item"></i>
       </a>
@@ -37,6 +34,9 @@ const Home = () => (
       </a>
       <a href="https://octobassgames.tumblr.com" title="tumblr">
         <i className="fab fa-tumblr link flex-item"></i>
+      </a>
+      <a href="https://bsky.app/profile/octobass-games.bsky.social" title="bluesky">
+        <i className="far fa-sticky-note link flex-item"></i>
       </a>
       <a href="https://github.com/octobass-games" title="github">
         <i className="fab fa-github link flex-item"></i>
