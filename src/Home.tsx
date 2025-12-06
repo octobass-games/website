@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Controller from './images/controller.png'
+import Donut from './images/donut.png'
+
 const Home = () => (
   <div className="App">
     <div className="main-header flex-container">
@@ -10,14 +13,14 @@ const Home = () => (
       <Link to="/games" className="fade-in">
         <img
           className="game-image flex-item"
-          src="https://i.imgur.com/V91m7jg.png"
-          alt="mini games"
+          src={Controller}
+          alt="Games"
         ></img>
       </Link>
       <Link to="/team" className="fade-in">
         <img
           className="game-image flex-item"
-          src="https://i.imgur.com/fuyqr8A.png"
+          src={Donut}
           alt="team"
         ></img>
       </Link>

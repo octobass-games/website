@@ -283,6 +283,7 @@ body {
 
 .game-images {
   padding-bottom: 30px;
+  gap: 10px;
 }
 
 .fade-in:nth-child(1) {
