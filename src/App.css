@@ -571,3 +571,16 @@ body {
     height: auto;
   }
 }
+
+.all-games {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  max-height: 80vh;
+  max-width: 702px;
+  overflow: auto;
+}
