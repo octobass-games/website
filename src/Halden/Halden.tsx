@@ -5,7 +5,7 @@ import HaldenDescription from "./HaldenDescription";
 import HaldenGames from "./HaldenGames";
 import HaldenMusic from "./HaldenMusic";
 import HaldenVideos from "./HaldenVideos";
-
+import HaldenGif from '../images/halden.gif'
 export type SelectedThing = "game" | "video" | "music" | undefined;
 
 const Halden = () => {
@@ -17,7 +17,7 @@ const Halden = () => {
         <div className="halden__image-wrapper">
           <img
             className="halden__image"
-            src="https://i.imgur.com/hmOoxWl.gif"
+            src={HaldenGif}
             alt=""
           />
         </div>
@@ -31,7 +31,7 @@ const Halden = () => {
                 <div className="halden__mobile-head-wrapper">
                   <img
                     className="halden__mobile-head"
-                    src="https://i.imgur.com/viy1QC7.png"
+                    src={HaldenGif}
                     alt=""
                   />
                 </div>

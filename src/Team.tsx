@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import NavBar from "./NavBar";
 import TeamMember from "./TeamMember";
+import Adam from './images/adam.gif'
+import Megan from './images/megan.gif'
+import Odette from './images/odette.gif'
+import Halden from './images/halden.gif'
 
 const meganDescription =
   "Megan: I'm a UK based dev, and also enjoy making pixel and digital art! I like point and click games, and collect toy flamingos.";
@@ -93,28 +97,28 @@ const Team = () => {
 
         <div className="team-wrapper">
           <TeamMember
-            image="https://i.imgur.com/ocGcJTJ.gif"
+            image={Adam}
             person="adam"
             onClick={toggle}
             isSelected={pickedPerson === "adam"}
           />
 
           <TeamMember
-            image="https://i.imgur.com/PGvf9v1.gif"
+            image={Megan}
             person="megan"
             onClick={toggle}
             isSelected={pickedPerson === "megan"}
           />
 
           <TeamMember
-            image="https://i.imgur.com/hmOoxWl.gif"
+            image={Halden}
             person="hal"
             onClick={toggle}
             isSelected={pickedPerson === "hal"}
           />
 
           <TeamMember
-            image="https://i.imgur.com/Tik2gsp.gif"
+            image={Odette}
             person="odette"
             onClick={toggle}
             isSelected={pickedPerson === "odette"}
