@@ -10,7 +10,7 @@ const meganDescription =
   "Megan: I'm a UK based dev, and also enjoy making pixel and digital art! I like point and click games, and collect toy flamingos.";
 
 const haldenDescription =
-  "Halden: I'm a student who has previously studied music and is now studying computer science. I enjoy music composition, performance and sound design. Some of my favourite instruments are tuba, trombone and guitar.";
+  "Halden: I enjoy music composition, performance and sound design. Some of my favourite instruments are tuba, trombone and guitar.";
 const adamDescription = `Adam: I'm a software developer currently residing in the U.K. I
 tend to predominantly play RPGs, with my favourite series being
 Persona. My other main interests include watching anime, listening to
